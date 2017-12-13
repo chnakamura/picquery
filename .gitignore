@@ -7,3 +7,7 @@ sql.py
 no-role-web-interface/config.php
 
 lambda-functions/config.py
+
+web-interface/config.php
+
+*.pem
