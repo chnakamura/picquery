@@ -33,7 +33,7 @@ try {
             'Key'    => $keyname
         ));
     
-        echo '<div class="col-lg-6" >';
+        echo '<div class="col-lg-4" >';
         echo '<figure class="figure">';
         echo '<img class="figure-img img-fluid rounded" src="data:image/jpeg;base64,'.base64_encode($result['Body']).'"/>';
         echo '<figcaption class="figure-caption">Confidence: '.$row['confidence'].'</figcaption>';
