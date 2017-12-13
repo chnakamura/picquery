@@ -10,6 +10,8 @@ It is so tediuous to sort through you photos and manually tag them.  What if it 
 
 [Checkpoint](https://github.com/chnakamura/CMSC389L_Split/blob/master/checkpoint.pdf)
 
+[Demo Video](https://www.youtube.com/watch?v=B0L8dqx8wY4&feature=youtu.be)
+
 ## Components
 
 **Frontend web interface** - The frontend web interface allows you to upload photos as well as query them for tags.
@@ -31,3 +33,37 @@ I originally planned to use Cognito to allow for the service to support multiple
 ## What is next
 
 I will use Cognito to enable user-login so that users can access their own photos.  While I could have created sign-in functionality on my own using PHP forms and a MySQL user table, I decided against it becuase it would not teach me anything new, and it would have only been a temporary solution.  The current interface is more just a proof of concept.
+
+## How to get it working on your own.
+
+I did not include my config.php or my config.py file in this repo becuase they had private keys, and the login to the database. They can be recreated in the following way:
+
+config.php:
+
+~~~
+$s3 = new S3Client([
+    'version' => '2006-03-01',
+    'region' => 'us-east-1',
+    'credentials' => array(
+        'key' => PUBLIC_KEY,
+        'secret'  => SECRET_KEY,
+      )
+]);
+
+$mysqli = mysqli_connect($dbhost, $dbuser, $dbpass, $db);
+
+?>
+~~~
+
+config.py:
+
+~~~
+config = {
+    'host': '... 1.rds.amazonaws.com',
+    'user': '',
+    'password': '',
+    'db': '',
+}
+~~~
+
+You will need to make a S3 bucket, and a Lambda function.  You will need to make an IAM role for the Lambda function so that has read-access from S3, and permission to call Rekognition.  Amazon provides a outline for a Lambda function that is triggers on S3 file upload.
