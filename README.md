@@ -6,8 +6,6 @@ It is so tediuous to sort through you photos and manually tag them.  What if it 
 
 ## Deliverables
 
-[An interactive demo](http://54.173.238.19/CMSC389L_Split/no-role-web-interface/)
-
 [Checkpoint](https://github.com/chnakamura/CMSC389L_Split/blob/master/checkpoint.pdf)
 
 [Demo Video](https://www.youtube.com/watch?v=B0L8dqx8wY4&feature=youtu.be)
