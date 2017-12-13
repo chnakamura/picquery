@@ -1,0 +1,1 @@
+ssh -i "cmsc389lsplit.pem" ubuntu@ec2-54-162-125-40.compute-1.amazonaws.com
