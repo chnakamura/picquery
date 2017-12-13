@@ -1,0 +1,14 @@
+body {
+   
+}
+
+.query {
+    text-align: center;
+    padding:20pt;
+}
+
+.mydropzone {
+    width: 100%;
+    height: 30vh;
+    border: 2px dashed gray;
+}
