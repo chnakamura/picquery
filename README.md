@@ -8,6 +8,8 @@ It is so tediuous to sort through you photos and manually tag them.  What if it 
 
 [An interactive demo](http://54.173.238.19/CMSC389L_Split/no-role-web-interface/)
 
+[Checkpoint](https://github.com/chnakamura/CMSC389L_Split/blob/master/checkpoint.pdf)
+
 ## Components
 
 **Frontend web interface** - The frontend web interface allows you to upload photos as well as query them for tags.
