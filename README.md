@@ -64,4 +64,8 @@ config = {
 }
 ~~~
 
+The project structure is overviewed in the demo video linked at the top of the page. 
+
 You will need to make a S3 bucket, and a Lambda function.  You will need to make an IAM role for the Lambda function so that has read-access from S3, and permission to call Rekognition.  Amazon provides a outline for a Lambda function that is triggers on S3 file upload.
+
+You will need to setup a MySQL database with RDS, the free tier will work as you are only storing filepaths and tags.  Finally, you will need to upload the web interface and run it on an EC2 server.
