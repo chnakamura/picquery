@@ -22,7 +22,7 @@ It is so tediuous to sort through you photos and manually tag them.  What if it 
 * Lambda: Photo upload triggers lambda function that tags the photos
 * Rekognition: Service used to tag the photos
 * RDS: A mySQL database used to store image tags
-* E3: Hosting service for the web interface
+* EC2: Hosting service for the web interface
 
 ## Challenges I ran into
 
